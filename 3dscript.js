@@ -22,7 +22,7 @@ function run(){
             lx:1,
             ly:1,
             lz:0,
-            chars:".-*",
+            chars:".-^%&$#@",
             ascii:false,
           },
           methods: {
@@ -181,7 +181,7 @@ function run(){
                             brightness=0
                         }
                         if (this.ascii){
-                            let textValue=this.chars[parseInt(brightness,10)]
+                            let textValue=this.chars[parseInt(brightness*this.chars.length,10)]
                             this.drawPointAscii([xp,yp],textValue)
 
                         }
